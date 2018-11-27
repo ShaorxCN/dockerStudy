@@ -6,3 +6,5 @@ WORKDIR  prepare/
 RUN ./install.sh
 RUN apt-get update
 #RUN apt-get install -y  vim 
+WORKDIR /
+RUN rm -rf prepare/
